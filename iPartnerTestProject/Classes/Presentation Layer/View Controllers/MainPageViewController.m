@@ -34,12 +34,6 @@
     [self reloadData];
 }
 
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-    
-    [self reloadData];
-}
-
 - (void)reloadData {
     [self.activityIndicatorView startAnimating];
     if ([SAMKeychain passwordForService:keychainService account:keychainAccount]) {
